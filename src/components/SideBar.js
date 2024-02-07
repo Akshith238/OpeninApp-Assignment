@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-const SideBar = ({setContent}) => {
+const SideBar = ({setContent,setToggle}) => {
     const itemList=[
         { 
             id: 1,
@@ -47,15 +47,22 @@ const SideBar = ({setContent}) => {
     };
 
   return (
-    <div class="flex-col w-[214px] h-[1047px] left-0 top--1 bg-white">
-       <div className='flex justify-evenly align-center h-30 m-8 p-5 gap-3'>
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9998 21.0966L42 21C42 9.40202 32.598 0 21 0C10.1757 0 1.26409 8.18954 0.123364 18.7105L11.79 24.4142C12.3617 23.6184 13.2953 23.1 14.35 23.1C15.2427 23.1 16.0487 23.4714 16.6219 24.068L25.9002 16.4134C25.9198 14.6906 27.3225 13.3 29.05 13.3C30.6572 13.3 31.9833 14.5037 32.1759 16.0587L41.9998 21.0966ZM17.4857 25.9482L26.5994 18.4294C27.1769 19.1434 28.0601 19.6 29.05 19.6C30.1912 19.6 31.1907 18.9931 31.7433 18.0845L41.8775 23.2815C40.7404 33.8063 31.8271 42 21 42C9.40202 42 0 32.598 0 21C0 20.9588 0.000118391 20.9177 0.000354851 20.8766L11.2016 26.3528C11.2559 28.0449 12.6447 29.4 14.35 29.4C16.0897 29.4 17.5 27.9897 17.5 26.25C17.5 26.1482 17.4952 26.0475 17.4857 25.9482Z" fill="#605BFF"/>
-            </svg>
-            <div className='mt-1 font-nunito font-[600] text-[24px]'>
-                Base
+    <div class="flex-col w-[300px] h-[800px] shadow-lg rounded-t-xl rounded-b-xl lg:w-[214px] lg:h-[1047px] lg:left-0 lg:top--1 bg-white">
+        
+       <div className='flex justify-between items-center h-30 m-4 p-5 gap-10'>
+            <div className='flex gap-6'>
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9998 21.0966L42 21C42 9.40202 32.598 0 21 0C10.1757 0 1.26409 8.18954 0.123364 18.7105L11.79 24.4142C12.3617 23.6184 13.2953 23.1 14.35 23.1C15.2427 23.1 16.0487 23.4714 16.6219 24.068L25.9002 16.4134C25.9198 14.6906 27.3225 13.3 29.05 13.3C30.6572 13.3 31.9833 14.5037 32.1759 16.0587L41.9998 21.0966ZM17.4857 25.9482L26.5994 18.4294C27.1769 19.1434 28.0601 19.6 29.05 19.6C30.1912 19.6 31.1907 18.9931 31.7433 18.0845L41.8775 23.2815C40.7404 33.8063 31.8271 42 21 42C9.40202 42 0 32.598 0 21C0 20.9588 0.000118391 20.9177 0.000354851 20.8766L11.2016 26.3528C11.2559 28.0449 12.6447 29.4 14.35 29.4C16.0897 29.4 17.5 27.9897 17.5 26.25C17.5 26.1482 17.4952 26.0475 17.4857 25.9482Z" fill="#605BFF"/>
+                </svg>
+                <div className='mt-1 font-nunito font-[600] text-[24px]'>
+                    Base
+                </div>
             </div>
-
+            <button onClick={()=>setToggle(false)}>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.3424 1.65682L6.68552 7.31375M6.68552 7.31375L1.0287 1.65685M6.68552 7.31375L1.02872 12.9706M6.68552 7.31375L12.3424 12.9706" stroke="#999CA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
        </div>
        <div className='flex-col'>
             {itemList.map((item)=>{

@@ -47,7 +47,7 @@ const Display = ({data}) => {
         }));
     };
   return (
-    <div className='flex font-figtree flex-col justify-start gap-4 p-8 pl-16 m-9'>
+    <div className='flex font-figtree flex-col justify-start gap-4 p-4 lg:p-8 lg:pl-16 lg:m-9'>
         {alert && (
             <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded-lg">
                 {alert}

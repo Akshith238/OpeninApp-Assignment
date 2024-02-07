@@ -77,7 +77,7 @@ const Upload = ({setData}) => {
           {alert}
         </div>
       )}
-      <div className='relative w-[596px] h-[367px] flex flex-col items-center gap-2 justify-center p-1 border-[2px]'>
+      <div className='relative w-[328px] h-[352px] lg:w-[596px] lg:h-[367px] flex flex-col items-center gap-2 justify-center p-1 border-[2px]'>
             
             <input
                 type="file"
@@ -88,7 +88,7 @@ const Upload = ({setData}) => {
             />
             <label
                 htmlFor="fileInput"
-                className="w-[564px] h-[258px] border-2 border-dashed rounded-lg flex items-center justify-center cursor-pointer"
+                className="w-[296px] h-[258px] lg:w-[564px] lg:h-[258px] border-2 border-dashed rounded-lg flex items-center justify-center cursor-pointer"
                 onDrop={handleDrop}
                 onDragOver={handleDragOver}
             >
@@ -165,7 +165,7 @@ const Upload = ({setData}) => {
                     
                 )}
             </label>
-            <button onClick={handleUpload} className="flex flex-row justify-center items-center gap-2 px-8 py-2 w-[564px] h-[56px] bg-primary rounded-lg">
+            <button onClick={handleUpload} className="flex flex-row justify-center items-center gap-2 px-8 py-2 w-[296px] h-[46px] lg:w-[564px] lg:h-[56px] bg-primary rounded-lg">
                 {uploading ?(
                     <>
                        <div className="absolute w-8 h-8">

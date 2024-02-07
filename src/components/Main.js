@@ -7,7 +7,9 @@ const Main = ({content,profile}) => {
   const [data, setData] = useState([]);
   return (
     <div className='flex-col w-full h-[1047px] bg-halfwhite'>
-        <Navbar content={content} profile={profile}/>
+        <div className='hidden lg:flex'>
+            <Navbar content={content} profile={profile}/>
+        </div>
         {content==="Upload" && (
             <div className='flex flex-col gap-5'>
                 <Upload setData={setData}/>
