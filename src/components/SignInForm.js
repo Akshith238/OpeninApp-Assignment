@@ -1,30 +1,28 @@
 import React from 'react'
 const SignInForm = () => {
-  const handleSignInClick = () => {
-    window.location.href = '/home';
-  }
+  
   return (
-    <div class="w-[440px] h-[347.99px] mt-[380px] ml-[90px] bg-white rounded-2xl">
+    <div class="w-[328px] h-[310.99px] top-[59.93px] mt-[180px] ml-[20px] lg:w-[440px] lg:h-[347.99px] lg:mt-[398.88px] lg:ml-[90px] bg-white rounded-2xl">
         <form className='flex flex-col gap-y-6'>
-            <div class="absolute w-[105.38px] h-[20.86px] left-[846.11px] top-[431.82px] font-lato font-normal text-base text-black">
+            <div class="absolute w-[111.61] h-[19px] top-[282.87px] left-[45.56px] lg:w-[105.38px] lg:h-[20.86px] lg:left-[846.11px] lg:top-[431.82px] font-lato font-normal text-base text-black">
               Email address
             </div>
-            <input type='text' className='absolute w-[356.77px] h-[43.91px] left-[846.11px] top-[463.65px] bg-gray-200 p-2 rounded-lg'></input>
+            <input type='text' className='absolute w-[276.88px] h-[43.91px] top-[320px] left-[45.56px] lg:w-[356.77px] lg:h-[43.91px] lg:left-[846.11px] lg:top-[463.65px] bg-gray-200 p-2 rounded-lg'></input>
 
-            <div class="absolute w-[74.65px] h-[20.86px] left-[846.11px] top-[529.52px] font-lato font-normal text-base text-black">
+            <div class="absolute w-[111.61] h-[19px] top-[370.87px] left-[45.56px] lg:w-[74.65px] lg:h-[20.86px] lg:left-[846.11px] lg:top-[529.52px] font-lato font-normal text-base text-black">
               Password
             </div> 
             <input
               type='password'
               id="password"
               name="password"
-              className="absolute w-[356.77px] h-[43.91px] left-[846.11px] top-[563.65px] bg-gray-200 p-2 rounded-lg"
+              className="absolute w-[276.88px] h-[43.91px] left-[45.56px] top-[400.87px] lg:w-[356.77px] lg:h-[43.91px] lg:left-[846.11px] lg:top-[563.65px] bg-gray-200 p-2 rounded-lg"
             />
 
-            <a href="/" class="absolute w-[136.12px] h-[20.86px] left-[847.21px] top-[620.22px] font-lato font-normal text-base text-blue-500">
+            <a href="/" class="absolute left-[45.56px] top-[460px] lg:w-[136.12px] lg:h-[20.86px] lg:left-[847.21px] lg:top-[620.22px] font-lato font-normal text-base text-blue-500">
               Forgot password?
             </a>
-              <button onClick={handleSignInClick} class="absolute w-[356.77px] h-[43.91px] left-[846.11px] top-[660.03px] bg-primary rounded-lg flex items-center justify-center">
+              <button class="absolute w-[276.88px] h-[43.91px] top-[501.08px] left-[45.56px] lg:w-[356.77px] lg:h-[43.91px] lg:left-[846.11px] lg:top-[660.03px] bg-primary rounded-lg flex items-center justify-center">
                 <span class="font-montserrat font-bold text-white text-base">
                     Sign In
                 </span>
